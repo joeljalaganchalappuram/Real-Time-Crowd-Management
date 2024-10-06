@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feed</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Live Video Feed</h1>
+    <img src="{{ url_for('video_stream') }}" style="width: 100%; height: auto;" />
+    <a href="/">Go back to upload image</a>
+    <br>
+    <a href="/emotion_detection">Start Emotion Detection</a>
+</body>
+</html>
